@@ -25,6 +25,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 import org.apache.commons.jcs.access.CacheAccess;
+import org.apache.log4j.PropertyConfigurator;
+
+import java.io.FileInputStream;
+import java.util.Properties;
 
 //@Stateless
 public class MusicService {
@@ -33,20 +37,19 @@ public class MusicService {
 
     
     private MusicDao musicDao=new MusicDao();
+  private JCS cache;
+    
 
-
-
-      private JCS cache;
+    
 
     public List<Album> getAllMusic() {
-      
-               System.out.println("printing from here...........");
-
-        
-         try
+        try
              {
-                 
-     List<Album> albumList = (List) cache.get("musicCache");
+             Properties props = new Properties();
+            props.load(new FileInputStream("src/log4j.properties"));
+            PropertyConfigurator.configure(props); 
+            
+       List<Album> albumList = (List) cache.get("musicCache");
      System.out.println("Size of album is"+albumList.size());
         if(albumList!=null) {
             System.out.println("returning from cache");
@@ -54,17 +57,15 @@ public class MusicService {
            }
      } catch(Exception e ){
          List<Album> albumList=musicDao.getAllTopHundredMusic();
-             System.out.println(albumList.size());
+           
              try{
-                 System.out.println("albumlist is getting putting");
-             cache.put("musicCache",albumList);
+                 System.out.println("albumlist is putting");
+                 musicDao.putIncache();
              }
              catch(Exception ef){
                  
              }
-//           cache.put("musicCache",albumList);
-       //    musicDao.putIncache();
-             
+
              
               return musicDao.getAllTopHundredMusic();
      }

@@ -104,11 +104,13 @@ public class MusicDao {
                   cache.put(new Integer(1),
                           s)
             });*/
-            int i=0;
-            for(Album a:albumList){
-                cache.put(new Integer(i+1), a);
-
-            }
+            
+            cache.put(1,albumList.get(0));
+//            int i=0;
+//            for(Album a:albumList){
+//                cache.put(new Integer(i+1), a);
+//              
+//            }
 
 
         } catch (CacheException e) {
