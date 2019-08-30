@@ -53,7 +53,7 @@ public class MusicDao {
     }
 
     public List<Album> getAllTopHundredMusic() {
-        System.out.println("At album lsit");
+       
    
         albumList.add(new Album(1, "Toby Mac", "Diverse City"));
         albumList.add(new Album(2, "Toby Mac", "Diverse City"));
@@ -82,8 +82,7 @@ public class MusicDao {
     public void putIncache() {
         try {
             
-            System.out.println("Going to put in cache........................");
-            
+           
             CompositeCacheManager ccm = CompositeCacheManager.getUnconfiguredInstance();
             Properties props = new Properties();
 
@@ -99,18 +98,12 @@ public class MusicDao {
             // Load the cache
             cache = JCS.getInstance("musicCache");
 
-            // Initialize the cache
-           /* allAlbumList.forEach(s-> {
-                  cache.put(new Integer(1),
-                          s)
-            });*/
-            
-            cache.put(1,albumList.get(0));
-//            int i=0;
-//            for(Album a:albumList){
-//                cache.put(new Integer(i+1), a);
-//              
-//            }
+
+            int i=0;
+            for(Album a:albumList){
+                cache.put(new Integer(i+1), a);
+              
+            }
 
 
         } catch (CacheException e) {

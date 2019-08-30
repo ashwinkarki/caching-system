@@ -2,4 +2,5 @@ com\ashwin\cacheapp\service\MusicService.class
 com\ashwin\cacheapp\response\ResponseGen.class
 com\ashwin\cacheapp\dao\MusicDao.class
 com\ashwin\cacheapp\ApplicationConfig.class
+com\ashwin\cacheapp\model\Album.class
 com\ashwin\cacheapp\ApiResource.class
