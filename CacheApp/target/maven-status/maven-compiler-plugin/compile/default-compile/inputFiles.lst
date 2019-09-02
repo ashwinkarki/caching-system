@@ -1,6 +1,10 @@
 C:\Users\ashwin.karki\Desktop\caching-system\CacheApp\src\main\java\com\ashwin\cacheapp\model\Album.java
 C:\Users\ashwin.karki\Desktop\caching-system\CacheApp\src\main\java\com\ashwin\cacheapp\service\MusicService.java
+C:\Users\ashwin.karki\Desktop\caching-system\CacheApp\src\main\java\com\ashwin\cacheapp\util\HibernateConnector.java
+C:\Users\ashwin.karki\Desktop\caching-system\CacheApp\src\main\java\com\ashwin\cacheapp\model\User.java
+C:\Users\ashwin.karki\Desktop\caching-system\CacheApp\src\main\java\com\ashwin\cacheapp\dao\impl\UserDAOImpl.java
 C:\Users\ashwin.karki\Desktop\caching-system\CacheApp\src\main\java\com\ashwin\cacheapp\ApplicationConfig.java
 C:\Users\ashwin.karki\Desktop\caching-system\CacheApp\src\main\java\com\ashwin\cacheapp\ApiResource.java
 C:\Users\ashwin.karki\Desktop\caching-system\CacheApp\src\main\java\com\ashwin\cacheapp\dao\MusicDao.java
+C:\Users\ashwin.karki\Desktop\caching-system\CacheApp\src\main\java\com\ashwin\cacheapp\dao\UserDAO.java
 C:\Users\ashwin.karki\Desktop\caching-system\CacheApp\src\main\java\com\ashwin\cacheapp\response\ResponseGen.java
