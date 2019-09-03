@@ -1,8 +1,9 @@
 com\ashwin\secondapp\helper\CacheHelper.class
 com\ashwin\secondapp\impl\TicketDAOImpl.class
 com\ashwin\secondapp\model\Ticket.class
-com\ashwin\secondapp\MyResource.class
 com\ashwin\secondapp\service\TicketService.class
+com\ashwin\secondapp\api\MyResource.class
 com\ashwin\secondapp\helper\SquaredCalculator.class
 com\ashwin\secondapp\impl\TicketServiceImpl.class
+com\ashwin\secondapp\api\RestApplication.class
 com\ashwin\secondapp\dao\TicketDAO.class
